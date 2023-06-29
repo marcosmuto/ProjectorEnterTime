@@ -102,7 +102,7 @@ async function EnterTime(driver) {
 
               Log('Task Name: [' + taskName + ']');
               
-              if (taskName == "1 Default Task Type") {
+              if (taskName == process.env.PROJECT_TASK) {
                 let taskHourFields = await task.findElements(By.className('total_cell_hours'));
                 await EnterTimeOnInput(taskHourFields);
               }

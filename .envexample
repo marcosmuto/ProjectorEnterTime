@@ -1,3 +1,4 @@
 PROJECTOR_USER=email to login
 PROJECTOR_PWD=login password
 PROJECT=name of the project to enter hours
+PROJECT_TASK=name of the task below the project
