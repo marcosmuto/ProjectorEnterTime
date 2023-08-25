@@ -96,7 +96,7 @@ async function EnterTime(driver) {
         else {
           let tasks = await row.findElements(By.className('item'))
           for (let task of tasks) {
-            if (await task.getTagName() == "ul") {
+            if (await task.getTagName() == "li") {
               let taskLink = await task.findElement(By.className('task_info'));
               let taskName = await taskLink.getText();
 
